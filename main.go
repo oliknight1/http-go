@@ -74,7 +74,6 @@ func handleConn(conn net.Conn) {
 	headers := make(map[string]string)
 	contentLength := 0
 
-	// Read headers, breaks out of loop if
 	for {
 		line, err := reader.ReadString('\n')
 
